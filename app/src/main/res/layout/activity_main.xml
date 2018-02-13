@@ -42,7 +42,8 @@
         android:layout_height="wrap_content"
         android:text="Login (Email) :"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="110dp" />
+        tools:layout_editor_absoluteY="110dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"

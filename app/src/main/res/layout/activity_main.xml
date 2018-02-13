@@ -6,52 +6,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="fr.eni.android.questionreponse.MainActivity">
-
+<!--
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Connection"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="334dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="334dp" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="260dp"
-        tools:ignore="MissingConstraints" />
+        android:inputType="textPassword"/>
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="147dp"
-        tools:ignore="MissingConstraints" />
+        android:inputType="textEmailAddress"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login (Email) :"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="110dp"
-        tools:ignore="MissingConstraints" />
+        android:text="Login (Email) :"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mot de passe :"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="228dp"
-        tools:ignore="MissingConstraints" />
+        android:text="Mot de passe :"/>-->
 
+    <Button
+        android:id="@+id/button"
+        android:text="Button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="186dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="277dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="84dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="84dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Pwd"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_test"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:orderInCategory="3"
+        android:title="TESTS"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item_theme"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:orderInCategory="2"
+        android:title="THEMES"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_account"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:orderInCategory="4"
+        android:title="ACCOUNT"
+        app:showAsAction="always" />
+</menu>

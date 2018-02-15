@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="43dp"
+        android:text="QUESTION"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Quel-est la couleur de la truite?"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignTop="@+id/textClock"
+        android:layout_marginTop="24dp"
+        android:text="La truite est rose!"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/button2"
+        android:text="Avais-tu la bonne réponse?"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="00:15"
+        android:textSize="72dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/holo_blue_light"
+        android:lineSpacingExtra="30sp"
+        android:text="Afficher Réponse"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Question"
+        android:layout_below="@+id/button2"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="51dp"
+        android:background="@android:color/holo_green_light"
+        android:lineSpacingExtra="30sp"
+        android:text="OUI"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:background="@android:color/holo_red_light"
+        android:lineSpacingExtra="30sp"
+        android:text="NON"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

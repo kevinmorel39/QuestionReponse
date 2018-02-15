@@ -26,7 +26,7 @@
         android:layout_below="@+id/Question"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="Quel-est la couleur de la truite?"
+        android:text="Qu'elle est la couleur de la truite ?"
         android:textSize="24sp" />
 
     <TextView

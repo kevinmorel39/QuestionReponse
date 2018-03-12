@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fr.eni.android.questionreponse.MainActivity">
+    tools:context="fr.eni.android.questionreponse.activities.MainActivity">
 <!--
     <Button
         android:id="@+id/button2"

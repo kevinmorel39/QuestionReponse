@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by PavlikKi on 12/03/2018.
  */
 
-public class User {
+public class User{
     private String login, pwd;
     private Date date_creation;
 

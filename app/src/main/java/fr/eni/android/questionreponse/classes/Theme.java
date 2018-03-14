@@ -4,7 +4,7 @@ package fr.eni.android.questionreponse.classes;
  * Created by PavlikKi on 12/03/2018.
  */
 
-public class Theme {
+public class Theme{
     private String titre, couleur;
 
     public Theme(String titre, String couleur) {

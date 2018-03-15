@@ -1,6 +1,7 @@
 package fr.eni.android.questionreponse.activities;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -62,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
                         String mdp = u.getPwd();
 
                         if (email.equals(saisieLogin.getText().toString()) && mdp.equals(saisiePwd.getText().toString())){
-                            Toast.makeText(MainActivity.this, "Connecté", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Bienvenue", Toast.LENGTH_SHORT).show();
                             //redirige l'utilisateur sur la page de lancement d'un test
-                            //Intent intent = new Intent(getApplicationContext(),CompteActivity.class);
-                            //intent.putExtra("user", u);
-                            //startActivity(intent);
-                            //break;
+                            Intent intent = new Intent(getApplicationContext(),LancertestActivity.class);
+                            intent.putExtra("user", (Parcelable) u);
+                            startActivity(intent);
+                            break;
                         }else {
                             Toast.makeText(MainActivity.this, "Login ou mot de passe incorrects", Toast.LENGTH_SHORT).show();
                         }

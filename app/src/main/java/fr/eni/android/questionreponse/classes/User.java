@@ -1,5 +1,6 @@
 package fr.eni.android.questionreponse.classes;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -7,39 +8,39 @@ import java.util.Date;
  */
 
 public class User{
+
+    //déclaration variables
     private String login, pwd;
-    private Date date_creation;
+    private Calendar date_creation;
 
-    public User(String login, String pwd, Date date_creation) {
-        this.login = login;
-        this.pwd = pwd;
-        this.date_creation = date_creation;
-    }
-
-    public User() {
-    }
-
+    //accesseurs
+    //getter
     public String getLogin() {
         return login;
     }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
     public String getPwd() {
         return pwd;
     }
-
+    public Calendar getDate_creation() {
+        return date_creation;
+    }
+    //setter
+    public void setLogin(String login) {
+        this.login = login;
+    }
     public void setPwd(String pwd) {
         this.pwd = pwd;
     }
-
-    public Date getDate_creation() {
-        return date_creation;
+    public void setDate_creation(Calendar date_creation) {
+        this.date_creation = date_creation;
     }
 
-    public void setDate_creation(Date date_creation) {
+    //contructeur
+    public User(){
+    }
+    public User(String login, String pwd, Calendar date_creation) {
+        this.login = login;
+        this.pwd = pwd;
         this.date_creation = date_creation;
     }
 }
